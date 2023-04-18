@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='sqlUtils',
-      version='0.1',
+      version='1.0',
       description='Tools for working with SQL data helping to analyze and visualize lengthy SQL scripts',
       url='https://github.com/zimmerst/sqlUtils',
       author='Stephan Zimmer',
