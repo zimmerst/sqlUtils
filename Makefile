@@ -1,5 +1,5 @@
 PACKAGE_NAME=sqlUtils
-PACKAGE_VERSION=0.1.0
+PACKAGE_VERSION=$(shell python -c "import $(PACKAGE_NAME); print($(PACKAGE_NAME).__version__)")
 
 .PHONY: help
 help:
@@ -17,6 +17,6 @@ clean:
 	rm -rf dist build $(PACKAGE_NAME).egg-info
 
 .PHONY: publish
-publish:
+publish: build
 	twine upload dist/*
 
